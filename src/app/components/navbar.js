@@ -135,7 +135,7 @@ if (typeof window !== "undefined"){
                 </div>
                 <ul className="buy-button list-none mb-0">
                     <li className="inline mb-0">
-                        <Link href="#">
+                        <Link href="/talep-sorgula">
                             <span className="py-[6px] px-4 md:inline hidden items-center justify-center tracking-wider align-middle duration-500 text-sm text-center rounded bg-green-400/5 hover:bg-green-400 border border-green-400/10 hover:border-green-400 text-green-400 hover:text-white font-semibold">Talep Sorgula</span>
                             <span className="py-[6px] px-4 inline md:hidden items-center justify-center tracking-wider align-middle duration-500 text-sm text-center rounded bg-green-400 hover:bg-green-500 border border-green-400 hover:border-green-500 text-white font-semibold">Talep Sorgula</span>
                         </Link>

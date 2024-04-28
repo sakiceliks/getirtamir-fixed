@@ -10,6 +10,7 @@ import AboutOne from './components/aboutOne';
 import AboutTwo from './components/aboutTwo';
 import Faq from './components/Faq';
 import Footer from './components/footer';
+import toast, { Toaster } from 'react-hot-toast';
 
 const components = {
   Navbar: dynamic(() => import('./components/navbar')),
@@ -26,6 +27,9 @@ export default function Index() {
     document.documentElement.classList.add('dark');
     document.documentElement.classList.remove('light');
   }, []);
+
+ 
+
 
   return (
     <>
@@ -49,9 +53,11 @@ export default function Index() {
                   className="typewrite bg-gradient-to-br from-green-400 to-green-600 text-transparent bg-clip-text ms-4"
                   repeat={Infinity}
                 />
+
+<br />
+Getir Tamir'e
               </h4>
-              <br />
-              <h4 className="font-bold text-4xl">Getir Tamir'e</h4>
+            
               <p className="text-white font-semibold text-lg max-w-xl mx-auto">Telefonunuz mu bozuldu? <br /> <span className="text-green-400">Getir Tamir</span>, sorunu çözmek için hizmetinizde.</p>
               <div className="mt-6">
                 <Link href="/talep-olustur" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-green-400 hover:bg-green-500 border-green-400 hover:border-green-500 text-white rounded-md">Talep Oluştur</Link>
@@ -71,8 +77,8 @@ export default function Index() {
         <AboutOne />
         <AboutTwo />
         <Faq />
-      </section>
+      <Toaster />      </section>
       <Footer />
     </>
   );
-}
+ }

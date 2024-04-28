@@ -12,14 +12,14 @@ const figtree= Figtree({
 
 export const metadata = {
   title: 'Getir Tamir',
-  description: 'Mortal.Ai - Next Js AI Writer & Copywriting Template',
+  description: 'Getir Tamir',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark scroll-smooth" dir="ltr">
       <body className={`${figtree.variable} font-figtree text-base text-slate-900 dark:text-white dark:bg-slate-900 `}>
-
+<Navbar/>
 {children}
       </body>
     </html>
