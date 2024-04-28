@@ -18,7 +18,7 @@ const TalepInfo = () => {
           return;
         }
         
-        const response = await fetch(`https://getirbot.vercel.app/talepler/${params.id}`);
+        const response = await fetch(`https://getirbot.vercel.app/talepler/${params.talepId}`);
 
         if (!response.ok) {
           setValidId(false); // Geçersiz talep numarası olduğunda durumu false olarak ayarlayın
