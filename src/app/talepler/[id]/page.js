@@ -14,9 +14,10 @@ const TalepInfo = () => {
   useEffect(() => {
     const fetchTalepInfo = async () => {
       try {
-        if (!params?.id) {
+        if (!params?.talepId) {
           return;
         }
+        
         
         const response = await fetch(`https://getirbot.vercel.app/talepler/${params.talepId}`);
 
