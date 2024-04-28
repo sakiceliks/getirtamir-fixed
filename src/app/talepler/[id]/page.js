@@ -14,12 +14,12 @@ const TalepInfo = () => {
   useEffect(() => {
     const fetchTalepInfo = async () => {
       try {
-        if (!params?.talepId) {
+        if (!params?.id) {
           return;
         }
         
         
-        const response = await fetch(`https://getirbot.vercel.app/talepler/${params.talepId}`);
+        const response = await fetch(`https://getirbot.vercel.app/talepler/${params.id}`);
 
         if (!response.ok) {
           setValidId(false); // Geçersiz talep numarası olduğunda durumu false olarak ayarlayın
